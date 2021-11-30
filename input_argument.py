@@ -3,9 +3,11 @@ import argparse
 
 args = argparse.ArgumentParser()
 
-args.add_argument('-x', '--xVal', required= True)
-# args.add_argumnt('-y', '--yVal', required=False)
+args.add_argument('-x','--xval',required=True)
+# args.add_argument('-y', '--yVal', required=False)
 
-arguvar = vars(args.parse_args())
+argvar = vars(args.parse_args())
+
+print(argvar['xval'])
 
 pass
